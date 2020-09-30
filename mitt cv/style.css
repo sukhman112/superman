@@ -1,0 +1,17 @@
+*{
+ margin: 0;
+ padding: 0;
+ background-color: darkgrey;   
+}
+img{
+    height:3000px ;
+    width: 1000px;
+    border: 40000px black;
+}
+#head{
+    text-align: center;
+    margin-left: 30px;
+    font-size: 300px;
+    margin-bottom: 200px;
+    padding-top: 20px;
+}
