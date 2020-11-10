@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+  }
+  
+  .item {
+    flex-grow: 1;
+    height: 100px;
+    width: 500px;
+    background-color: aqua;
+  }
+  
+  .item-center {
+   flex-grow: 1;   
+  }
+  .item + .item {
+    margin-left: 2%;
+  }
