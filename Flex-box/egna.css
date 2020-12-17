@@ -6,14 +6,17 @@
 
   }
    body {
-     background-color: black;
+     background-color: white;
+     background-image: image("Images/landscape1.jpg.png");
+     background-size: cover;
+     background-attachment: fixed;
    }
   .item {
     display: flex;
     flex-grow: 1;
     height: 100px;
-    width: 200px;
-    background-color: aqua;
+    width: 100px;
+    background-color : gray;
     justify-content: center;
     algin-items: center;
     padding-bottom: 18%;
