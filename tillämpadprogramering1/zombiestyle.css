@@ -1,0 +1,30 @@
+.mainmenu {
+    background-image: url("img/hemskÃ¤rm.jpg");
+    background-size: cover;
+}
+
+.startscreen {
+    background-color: none;
+}
+.starttitel h1 {
+    text-align: center;
+    color: white;
+    font-size: 90px;
+}
+.starttitel h2 {
+    color: white;
+    font-size: 45px;
+}
+.gameovertitel h1 {
+    color: rgb(95, 10, 10);
+    font-size: 160px;
+}
+
+.buttons button {
+    color: white;
+    background-color:rgb(107, 7, 7);
+    padding-right: 1000px;
+    padding-left: 1000px;
+    margin-right: 5px;
+    margin-left: 5px;
+}

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+
+<body class="game">
+    <div></div>
+<script src="https://koda.nu/simple.js">
+
+var zombies = [];
+var i = 0;
+var timecount = 0
+setInterval(function () { timecount += 1; }, 1000);
+
+while (i < 5)
+{
+    zombies.push({x: random(totalWidth),
+                  y: random(totalHeight),
+                  speed: random(1,5)});
+    i += 1;
+}
+
+function getHex(){
+  return '#' + Math.random().toString(16).slice(2, 8);
+}
+function setBackground(){
+  var bgColor = getHex();
+  document.body.style.background=bgColor;
+}
+document.body.onkeyup=function(a){
+  if(a.keyCode == 32){
+    setBackground();
+  document.getElementById("asd").innerHTML = getHex();
+  }
+}
+
+function update()
+    {
+        clearScreen();
+        
+        var i = 0;
+        while (i < 5)
+        {
+            var zombie = zombies[i];
+            picture(zombie.x, zombie.y, "pictures/main.png");
+            
+            
+            
+            if (zombie.x < mouse.x)
+                zombie.x += zombie.speed;
+            else
+                zombie.x -= zombie.speed;
+
+            if (zombie.y < mouse.y)
+                zombie.y += zombie.speed;
+            else
+                zombie.y -= zombie.speed;
+        
+            if (distance(mouse, zombie) < 5)
+            {
+                stopUpdate();
+                location.replace('zombiegame.html')
+            i+=1;
+        }
+
+
+    }
+
+</script>
+
+
+</body>
+</html>
